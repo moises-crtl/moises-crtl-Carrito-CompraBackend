@@ -16,7 +16,7 @@ public class ServiceProductImp implements ServiceProduct{
 
 	public List<Product> products;
 	
-	@Autowired
+
 	private ServiceProduct serviceProduct;
 	
 	

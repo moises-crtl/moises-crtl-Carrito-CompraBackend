@@ -57,15 +57,15 @@ public class ProductController {
 		}
 	}
 	
-//	@RequestMapping(value = Constan.ENDPOINT_UPDATE_BY_IDPRODUCT, method = RequestMethod.PUT)
-//	public ResponseEntity<Product> updateProduct(@PathVariable("idProduct")int idProduct, 
-//			@RequestBody Product product){
-//		Product updateProuct = serviceProduct.update(product);
-//		if (updateProuct == null) {
-//			return ResponseEntity.notFound().build();
-//		}else {
-//			return ResponseEntity.ok(updateProuct);
-//		}
-//	}
+	@RequestMapping(value = Constan.ENDPOINT_UPDATE_BY_IDPRODUCT, method = RequestMethod.PUT)
+	public ResponseEntity<Product> updateProduct(@PathVariable("idProduct")int idProduct, 
+			@RequestBody Product product){
+		Product updateProuct = serviceProduct.update(product);
+		if (updateProuct == null) {
+			return ResponseEntity.notFound().build();
+		}else {
+			return ResponseEntity.ok(updateProuct);
+		}
+	}
 
 }
