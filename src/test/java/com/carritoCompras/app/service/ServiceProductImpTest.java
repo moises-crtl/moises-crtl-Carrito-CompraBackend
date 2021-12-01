@@ -60,8 +60,7 @@ class ServiceProductImpTest {
 				.price(20.0)
 				.stock(7)
 				.build();
-		cola.setIdProduct(1);
-		when(serviceProduct.update(cola)).thenReturn(cola);
+		cola.setIdProduct(4);
 		assertThat(cola.getName().compareTo("Lata Coca-Cola"));
 	}
 }
